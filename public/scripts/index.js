@@ -617,9 +617,9 @@ const handleEquipDelete = (id) =>{
 
 const addClassToWrapper = (type) =>{
     if(type){
-        document.getElementById("isotop-wrapper-id").classList.add("only-six")
+        document.getElementById("isotop-wrapper-id")?.classList.add("only-six")
     }else{
-        document.getElementById("isotop-wrapper-id").classList.remove("only-six")
+        document.getElementById("isotop-wrapper-id")?.classList.remove("only-six")
 
     }
 
