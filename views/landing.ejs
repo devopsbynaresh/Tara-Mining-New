@@ -561,7 +561,7 @@
                             <div class="divider-30 hidden-above-lg"></div>
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-xl-8">
-                                    <!-- <div class="filters gallery-filters">
+                                    <div class="filters gallery-filters">
                                         <a onclick="addClassToWrapper('add')" href="#" data-filter="*" class="active selected">show All</a>
                                         <a onclick="addClassToWrapper('')" href="#" data-filter=".Drilling">Drilling</a>
                                         <a onclick="addClassToWrapper('')" href="#" data-filter=".Blasting">Blasting</a>
@@ -569,7 +569,7 @@
                                         <a onclick="addClassToWrapper('')" href="#" data-filter=".Supporting">Supporting</a>
 
 
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                             <div id="isotop-wrapper-id" class="only-six row isotope-wrapper portfolio masonry-layout c-mb-30 six-options"
@@ -970,28 +970,5 @@
                 </div>
                 <script>
 
-
-                    $(document)?.ready(function () {
-                        // Gets the video src from the data-src on each button
-                        var $videoSrc;
-                        $('.video-btn')?.click(function () {
-                            $videoSrc = $(this)?.data("src");
-                            //alert($videoSrc);
-                            console.log($videoSrc);
-                            // when the modal is opened autoplay it  
-                            $('#myModal')?.on('shown.bs.modal', function (e) {
-                                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-                                $("#video")?.attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-                            })
-                            // stop playing the youtube video when I close the modal
-                            $('#myModal')?.on('hide.bs.modal', function (e) {
-                                // a poor man's stop video
-                                $("#video")?.attr('src', $videoSrc);
-                            })
-                            // document ready  
-                        });
-
-
-                    });
 
                 </script>
